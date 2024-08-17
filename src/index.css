@@ -18,13 +18,15 @@ code {
 }
 
 *::-webkit-scrollbar {
-  width: 8px; /* For vertical scrollbars */
-  height: 8px; /* For horizontal scrollbars */
+  width: 8px;
+  /* For vertical scrollbars */
+  height: 8px;
+  /* For horizontal scrollbars */
 }
 
 *::-webkit-scrollbar-track {
-  background:   
- #f1f1f1;
+  background:
+    #f1f1f1;
 }
 
 *::-webkit-scrollbar-thumb {

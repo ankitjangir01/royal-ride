@@ -59,7 +59,7 @@ const CarsList = () => {
                     {
                         carsList.slice(0, Math.ceil(carsList.length / 2)).map((car, index) => {
                             return (
-                                <div key={index} className='m-2 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden max-w-max group' style={{ boxShadow: '0 2px 8px #0000004d' }}>
+                                <div key={index} className='m-2 w-[450px] h-[180px] sm:h-[250px] lg:h-[300px] bg-white rounded-xl overflow-hidden max-w-max group' style={{ boxShadow: '0 2px 8px #0000004d' }}>
                                     <img src={car.img} alt={car.name} style={{ height: '77%' }} className='group-hover:scale-105 ease-in-out duration-200' />
                                     <div className='font-pacifico text-xl'>
                                         {car.name}
@@ -73,7 +73,7 @@ const CarsList = () => {
                     {
                         carsList.slice(Math.ceil(carsList.length / 2)).map((car, index) => {
                             return (
-                                <div key={index} className='m-2 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden max-w-max group' style={{ boxShadow: '0 2px 8px #0000004d' }}>
+                                <div key={index} className='m-2 w-[450px] h-[180px] sm:h-[250px] lg:h-[300px] bg-white rounded-xl overflow-hidden max-w-max group' style={{ boxShadow: '0 2px 8px #0000004d' }}>
                                     <img src={car.img} alt={car.name} style={{ height: '77%' }} className='group-hover:scale-105 ease-in-out duration-200' />
                                     <div className='font-pacifico text-xl'>
                                         {car.name}
@@ -82,7 +82,7 @@ const CarsList = () => {
                             )
                         })
                     }
-                    <div className='m-2 w-[450px] h-[300px] bg-white rounded-xl overflow-hidden font-pacifico text-xl flex items-center justify-center' style={{ boxShadow: '0 2px 8px #0000004d' }}>
+                    <div className='m-2 w-[200px] sm:w-[450px] h-[180px] sm:h-[250px] lg:h-[300px] bg-white rounded-xl overflow-hidden font-pacifico text-xl flex items-center justify-center' style={{ boxShadow: '0 2px 8px #0000004d' }}>
                         And many more...
                     </div>
                 </div >
