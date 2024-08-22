@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
     <div className="w-full bg-black text-center text-white flex justify-center items-center p-4 font-pacifico gap-6 text-2xl text-gold">
         <img src={Logo} alt='logo' className='max-w-[6rem]' />
-        <p className='text-gold'>Royal Ride Tours N Travels</p>
+        <p className='text-gold'>Royal Ride Tours N Travels JJN</p>
     </div>
     </>
   )

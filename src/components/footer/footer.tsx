@@ -7,27 +7,27 @@ const Footer = () => {
             <div className='flex flex-col justify-start text-start sm:ml-32 sm:w-1/3'>
                 <img src={Logo} className='w-32 mb-4' alt='logo' />
                 <div className='font-pacifico text-2xl mb-2'>
-                    Royal Ride Tours N Travels
+                    Royal Ride Tours N Travels JJN
                 </div>
                 <p>Near Sai Hospital</p>
                 <p>Jhunjhunu, Rajasthan</p>
                 <p>333001</p>
 
-                <p>Phone: 9783852408</p>
-                <p>Email: connect@royalridetnt.com</p>
+                <p className='cursor-pointer' onClick={() => window.open(`tel:+91${9783852408}`)}>Phone: 9783852408</p>
+                <p className='cursor-pointer' onClick={() => window.open(`mailto:narpatnarukasingh@gmail.com`)} >Email: narpatnarukasingh@gmail.com</p>
             </div>
             <div className='sm:ml-32 mr-0 sm:mr-auto text-start'>
                 <div className='font-pacifico text-2xl mb-2 '>
                     Follow us for latest updates
                 </div>
-                <p className='my-2 cursor-pointer hover:underline' onClick={() => window.open('https://www.facebook.com/DhruvRatheePage/', '_blank')}>
-                    <img src={Facebook} alt='facebook' className='w-6 mr-4 inline-block' />
-                    @royalridetntjjn
+                <p className='my-2 cursor-pointer hover:underline' onClick={() => window.open('https://www.facebook.com/royal.ride.tour.n.travels.jjn/', '_blank')}>
+                    <img src={Facebook} alt='facebook' className='w-6 mr-3 inline-block' />
+                    @royal.ride.tour.n.travels.jjn
                 </p>
-                <p className='my-2 cursor-pointer hover:underline' onClick={() => window.open('https://www.instagram.com/dhruvrathee/?hl=en', '_blank')}>
+                {/* <p className='my-2 cursor-pointer hover:underline' onClick={() => window.open('https://www.instagram.com/dhruvrathee/?hl=en', '_blank')}>
                     <img src={Instagram} alt='instagram' className='w-6 mr-4 inline-block' />
                     @royalridetntjjn
-                </p>
+                </p> */}
             </div>
         </div>
     )
