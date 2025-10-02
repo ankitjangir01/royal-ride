@@ -1,8 +1,10 @@
 import React from 'react'
+import DeveloperPopup from './developer-popup'
 import { Facebook, Instagram, Logo } from '../../assets/svg'
 
 const Footer = () => {
     return (
+        <>
         <div className='w-full py-8 bg-black text-white flex flex-col sm:flex-row justify-around sm:justify-between items-center gap-8'>
             <div className='flex flex-col justify-start text-start sm:ml-32 sm:w-1/3'>
                 <img src={Logo} className='w-32 mb-4' alt='logo' />
@@ -30,6 +32,14 @@ const Footer = () => {
                 </p> */}
             </div>
         </div>
+        {/* Developer popup appears after browsing for a while */}
+        <div className='w-full bg-black text-white text-center py-4'>
+            Contact developer via email: 
+            <p className='cursor-pointer' onClick={() => window.open(`mailto:jangirankit@proton.me`)} >jangirankit@proton.me</p>
+        </div>
+
+        <DeveloperPopup />
+        </>
     )
 }
 
